@@ -1,15 +1,12 @@
 import {observable, action} from 'mobx';
 import RouterStore from './routerStore';
 class TabBarStore {
-  @observable currentTab;
-  constructor() {
-    setTimeout(() => {
-      RouterStore.navigate('tab2');
-    }, 3000);
-  }
+  @observable currentScene = 'tab1';
+
   @action setCurrentScene = () => {
     // console.log(Actions.currentScene);
-    // this.currentTab = Actions.currentScene;
+    let routeName = RouterStore.currentRoute;
+    routeName ? (this.currentScene = routeName) : null;
   };
 }
 

@@ -1,11 +1,26 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
-const Tab1 = () => {
+import {inject, observer} from 'mobx-react';
+import {useFocusEffect} from '@react-navigation/native';
+
+const Tab1 = ({TabBarStore}) => {
+  const {setCurrentScene} = TabBarStore;
+
+  useFocusEffect(() => {
+    setTimeout(() => setCurrentScene(), 50);
+  });
+
   return (
     <SafeAreaView
-      style={{flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:'red'}}>
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'red',
+      }}>
       <Text>tab1</Text>
     </SafeAreaView>
   );
 };
-export default Tab1;
+export default inject('TabBarStore')(observer(Tab1));

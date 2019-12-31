@@ -13,13 +13,14 @@ const Tab = createMaterialTopTabNavigator();
 const AppRouter = () => (
   <Provider {...Store}>
     <NavigationNativeContainer
+      onStateChange={state => Store.RouterStore.setRouterState(state)}
       ref={navigatorRef => Store.RouterStore.setRouterRef(navigatorRef)}>
       <Tab.Navigator
         tabBar={() => <TabBar />}
-        initialRouteName={'tab1'}
+        // initialRouteName={Store.TabBarStore.currentScene}
         tabBarPosition={'bottom'}>
-        <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="tab1" component={Tab1} />
+        <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="tab2" component={Tab2} />
       </Tab.Navigator>
     </NavigationNativeContainer>
