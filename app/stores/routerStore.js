@@ -11,7 +11,7 @@ class RouterStore {
     this.routerState = state;
   };
 
-  navigate = routeName => {
+  @action navigate = routeName => {
     this.routerRef.navigate(routeName);
   };
 

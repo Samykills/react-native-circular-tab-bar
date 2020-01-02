@@ -8,7 +8,7 @@ const Tab2 = ({TabBarStore}) => {
   const {setCurrentScene} = TabBarStore;
 
   useFocusEffect(() => {
-    setTimeout(() => setCurrentScene(), 50);
+    setTimeout(() => setCurrentScene(), 0);
   });
 
   return (
@@ -17,7 +17,7 @@ const Tab2 = ({TabBarStore}) => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'yellow',
+        // backgroundColor: 'yellow',
       }}>
       <Text>tab2</Text>
     </SafeAreaView>

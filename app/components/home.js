@@ -8,7 +8,7 @@ const Home = ({TabBarStore}) => {
   const {setCurrentScene} = TabBarStore;
 
   useFocusEffect(() => {
-    setTimeout(() => setCurrentScene(), 50);
+    setTimeout(() => setCurrentScene(), 0);
   });
 
   return (
@@ -17,7 +17,7 @@ const Home = ({TabBarStore}) => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'blue',
+        // backgroundColor: 'blue',
       }}>
       <Text>Home</Text>
     </SafeAreaView>

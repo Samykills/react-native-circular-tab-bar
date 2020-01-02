@@ -20,7 +20,7 @@ const AppRouter = () => (
         // initialRouteName={Store.TabBarStore.currentScene}
         tabBarPosition={'bottom'}>
         <Tab.Screen name="tab1" component={Tab1} />
-        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="home" component={Home} />
         <Tab.Screen name="tab2" component={Tab2} />
       </Tab.Navigator>
     </NavigationNativeContainer>
