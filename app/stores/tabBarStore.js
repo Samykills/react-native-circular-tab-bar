@@ -1,12 +1,15 @@
 import {observable, action} from 'mobx';
 import RouterStore from './routerStore';
+import SoundPlayer from 'react-native-sound-player';
 class TabBarStore {
   @observable currentScene = 'tab1';
 
   @action setCurrentScene = () => {
-    // console.log(Actions.currentScene);
     let routeName = RouterStore.currentRoute;
-    routeName ? (this.currentScene = routeName) : null;
+    if (routeName) {
+      SoundPlayer.playSoundFile('tick', 'mp3');
+      this.currentScene = routeName;
+    }
   };
 }
 

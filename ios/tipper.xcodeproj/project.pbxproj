@@ -18,6 +18,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* tipperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tipperTests.m */; };
 		3B57F1AB12A98A8700752CFF /* libPods-tipperTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D585538392B985872916251 /* libPods-tipperTests.a */; };
 		54BCBBE8F4746ED6B5F0DBB8 /* libPods-tipper-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 880195C290572A0F0E516717 /* libPods-tipper-tvOSTests.a */; };
+		78079A7E23BE3E8F0098DF56 /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 78079A7D23BE3E8F0098DF56 /* tick.wav */; };
 		E3DC33F4FD9C4516F6AB64D6 /* libPods-tipper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF825EBE614543BA7DC6D44 /* libPods-tipper.a */; };
 		E794C844E868F5F998B5C851 /* libPods-tipper-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92056BFEBEA78649B5474FE6 /* libPods-tipper-tvOS.a */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		2D02E4901E0B4A5D006451C7 /* tipper-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tipper-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E95A8FC737EBE2A4953F100 /* Pods-tipperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipperTests.release.xcconfig"; path = "Target Support Files/Pods-tipperTests/Pods-tipperTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D455CD1862D62A298F73B80 /* Pods-tipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipper.release.xcconfig"; path = "Target Support Files/Pods-tipper/Pods-tipper.release.xcconfig"; sourceTree = "<group>"; };
+		78079A7D23BE3E8F0098DF56 /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = tick.wav; path = ../../android/app/src/main/res/raw/tick.wav; sourceTree = "<group>"; };
 		7A16076D489BEB2E41BB48C2 /* Pods-tipper-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipper-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-tipper-tvOSTests/Pods-tipper-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		880195C290572A0F0E516717 /* libPods-tipper-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tipper-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92056BFEBEA78649B5474FE6 /* libPods-tipper-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tipper-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		78079A7823BE3D320098DF56 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				78079A7D23BE3E8F0098DF56 /* tick.wav */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				78079A7823BE3D320098DF56 /* assets */,
 				13B07FAE1A68108700A75B9A /* tipper */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* tipperTests */,
@@ -194,7 +205,6 @@
 				BD06D04BF39704EB75DAB4EC /* Pods-tipperTests.debug.xcconfig */,
 				4E95A8FC737EBE2A4953F100 /* Pods-tipperTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +318,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78079A7E23BE3E8F0098DF56 /* tick.wav in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
