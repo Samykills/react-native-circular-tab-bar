@@ -964,19 +964,6 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
-"@react-native-community/masked-view@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.5.tgz#25421be6cd943a4b1660b62cfbcd45be8891462c"
-  integrity sha512-Lj1DzfCmW0f4HnmHtEuX8Yy2f7cnUA8r5KGGUuDDGtQt1so6QJkKeUmsnLo2zYDtsF8due6hvIL06Vdo5xxuLQ==
-
-"@react-navigation/bottom-tabs@^5.0.0-alpha.28":
-  version "5.0.0-alpha.28"
-  resolved "https://registry.yarnpkg.com/@react-navigation/bottom-tabs/-/bottom-tabs-5.0.0-alpha.28.tgz#92b61c74839e6eb7b55d4c7253ee9f7ce0da4053"
-  integrity sha512-OIdFGfQcddz/EVHtLOppQa4fPwJJLid8xsDkvVT7fFiIb0OP2AzJCf2vSmvt+PRUGaCnDMHsYKj+jzcopsY8ng==
-  dependencies:
-    "@react-navigation/routers" "^5.0.0-alpha.18"
-    color "^3.1.2"
-
 "@react-navigation/core@^5.0.0-alpha.29":
   version "5.0.0-alpha.29"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.0.0-alpha.29.tgz#547f3468c2c9fab839e72c76d5582c0396006a29"
@@ -1016,14 +1003,6 @@
   dependencies:
     "@react-navigation/core" "^5.0.0-alpha.29"
     shortid "^2.2.15"
-
-"@react-navigation/stack@^5.0.0-alpha.46":
-  version "5.0.0-alpha.46"
-  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.0.0-alpha.46.tgz#a0a5f5eb757f688ae8ae0354a9d0f5f5c2aaa864"
-  integrity sha512-pZVpZgBlFFE0SIS7nyjzx5ZCIDfhhMW8sUoW/nFtFAbbnuoNUlHRj4mzdFQe400gKOY+S93zvWNLjHQVZUbuaA==
-  dependencies:
-    "@react-navigation/routers" "^5.0.0-alpha.18"
-    color "^3.1.2"
 
 "@types/babel__core@^7.1.0":
   version "7.1.3"

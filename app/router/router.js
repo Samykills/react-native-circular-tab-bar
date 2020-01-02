@@ -15,10 +15,7 @@ const AppRouter = () => (
     <NavigationNativeContainer
       onStateChange={state => Store.RouterStore.setRouterState(state)}
       ref={navigatorRef => Store.RouterStore.setRouterRef(navigatorRef)}>
-      <Tab.Navigator
-        tabBar={() => <TabBar />}
-        // initialRouteName={Store.TabBarStore.currentScene}
-        tabBarPosition={'bottom'}>
+      <Tab.Navigator tabBar={() => <TabBar />} tabBarPosition={'bottom'}>
         <Tab.Screen name="tab1" component={Tab1} />
         <Tab.Screen name="home" component={Home} />
         <Tab.Screen name="tab2" component={Tab2} />

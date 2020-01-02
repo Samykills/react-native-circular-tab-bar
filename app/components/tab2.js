@@ -17,7 +17,6 @@ const Tab2 = ({TabBarStore}) => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        // backgroundColor: 'yellow',
       }}>
       <Text>tab2</Text>
     </SafeAreaView>

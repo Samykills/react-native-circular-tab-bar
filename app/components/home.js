@@ -17,7 +17,6 @@ const Home = ({TabBarStore}) => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        // backgroundColor: 'blue',
       }}>
       <Text>Home</Text>
     </SafeAreaView>
